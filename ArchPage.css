@@ -1,0 +1,103 @@
+body{
+
+    overflow: scroll;
+
+}
+
+unImg{
+    position:absolute;
+    color: black;
+    font-family: "Larsseit Medium";
+    font-size: 1.5vw;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    top: 50%;
+}
+
+.arch01 {
+    position: absolute;
+    top: 5vh;
+    left: 20vw;
+    width: 18vw;
+    height: 24.75vw;
+}
+
+.arch01 img{
+    position: absolute;
+    max-width:100%;
+}
+
+
+.arch02 {
+    position: absolute;
+    top: 5vh;
+    left: 40vw;
+    width: 18vw;
+    height: 24.75vw;
+}
+
+.arch02 img{
+    position: absolute;
+    max-width:100%;
+}
+
+.arch03 {
+    position: absolute;
+    top: 5vh;
+    left: 60vw;
+    width: 18vw;
+    height: 24.75vw;
+}
+
+.arch03 img{
+    position: absolute;
+    max-width:100%;
+}
+
+
+.arch04 {
+    position: absolute;
+    top: calc(2vw + 24.75vw + 5vh);
+    left: 20vw;
+    width: 18vw;
+    height: 24.75vw;
+}
+
+.arch04 img{
+    position: absolute;
+    max-width:100%;
+}
+
+.arch05 {
+    position: absolute;
+    top: calc(2vw + 24.75vw + 5vh);
+    left: 40vw;
+    width: 18vw;
+    height: 24.75vw;
+}
+
+.arch05 img{
+    position: absolute;
+    max-width:100%;
+}
+
+.arch06 {
+    position: absolute;
+    top: calc(2vw + 24.75vw + 5vh);
+    left: 60vw;
+    width: 18vw;
+    height: 24.75vw;
+}
+
+.arch06 img{
+    position: absolute;
+    max-width:100%;
+}
+
+.titleHead{
+    position:absolute;
+    top: 5vh;
+    left: 20vw;
+    width: 58vw;
+}
