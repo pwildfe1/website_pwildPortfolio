@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Peter Wildfeuer Design</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <style>
+        body {
+            background-color: #ffffff;
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="content.css">
+</head>
+<body>
+
+<script src="styleChanging.js"></script>
+<script src="booklet.js"></script>
+
+<div class="titleHead">
+    <ti> U P E N N </ti>
+</div>
+
+<div class="next">
+    <img onmouseover="reveal(this,1)" onmouseout="reveal(this,.5)" onclick="turn('pg0',5)" src="Icons/nextPage.png">
+</div>
+
+<div class="previous">
+    <img onmouseover="reveal(this,1)" onmouseout="reveal(this,.5)" onclick="turnBack('pg0',5)" src="Icons/previousPage.png">
+</div>
+
+<div class="stPg">
+    <img id="pg01" src="Links/ws_spatial.jpg">
+</div>
+
+<div class="pg">
+    <img id="pg02" src="Links/ws_spatial2.jpg">
+    <img id="pg03" src="Links/ws_spatial3.jpg">
+    <img id="pg04" src="Links/ws_spatial4.jpg">
+    <img id="pg05" src="Links/ws_spatial5.jpg">
+</div>
+
+
+</body>
+</html>

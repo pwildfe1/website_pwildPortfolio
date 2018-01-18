@@ -1,0 +1,144 @@
+body{
+
+    overflow: scroll;
+
+}
+
+unImg{
+    position:absolute;
+    color: black;
+    font-family: Larsseit Medium;
+    font-size: 1.5vw;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    top: 50%;
+}
+
+ti{
+    position:absolute;
+    color: black;
+    text-align: center;
+    width: 100%;
+    font-family: Larsseit Light;
+    font-size: 24px;
+}
+
+rTi{
+    position:absolute;
+    color: black;
+    text-align:right;
+    width:100%;
+    font-family: Georgia;
+    font-size: 13px;
+}
+
+lTi{
+    position:absolute;
+    color: black;
+    text-align:left;
+    width:100%;
+    font-family: Georgia;
+    font-size: 13px;
+}
+
+cp {
+    position:absolute;
+    width: 100%;
+    top:105%;
+    font-family:Georgia;
+    font-size:13px;
+}
+
+bodL{
+    position: absolute;
+    color:black
+    text-align: left;
+    width: 45%
+    font-family: Georgia;
+    font-size: 13px;
+}
+
+bodR{
+    position: absolute;
+    color: black;
+    text-align: left;
+    width: 45%;
+    font-family: Georgia;
+    font-size: 13px;
+    left: 50%
+}
+
+bodC{
+    position: absolute;
+    color: black;
+    text-align: center;
+    line-height: 150%;
+    top: 110%;
+    width: 100%;
+    font-family: Georgia;
+    font-size: 13px;
+}
+
+.previous{
+    position: absolute;
+    top: calc(5vh + 100px + 15vw);
+    width: 5vw;
+    left: 15vw;
+}
+
+.previous img{
+    position: absolute;
+    opacity: .5;
+    max-width: 50%
+}
+
+.next{
+    position: absolute;
+    top: calc(5vh + 100px + 15vw);
+    width: 5vw;
+    right: 15vw
+}
+
+.next img{
+    position: absolute;
+    opacity: .5;
+    max-width: 50%;
+    left: 100%;
+}
+
+.stPg {
+    position: absolute;
+    top: calc(2vh + 60px);
+    left: 20vw;
+    width: 60vw;
+    height: 24vw;
+}
+
+.stPg img{
+    position: absolute;
+    opacity: 1;
+    max-width:100%;
+}
+
+
+.pg {
+    position: absolute;
+    top: calc(2vh + 60px);
+    left: 20vw;
+    width: 60vw;
+    height: 24vw;
+}
+
+.pg img{
+    position: absolute;
+    opacity: 0;
+    max-width:100%;
+}
+
+.titleHead{
+    position:absolute;
+    top: 5vh;
+    left: 20vw;
+    width: 58vw;
+}
