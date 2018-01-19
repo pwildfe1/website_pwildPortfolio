@@ -116,3 +116,27 @@ bodR{
     left: 20vw;
     width: 58vw;
 }
+
+.titleHead img{
+    position: absolute;
+    width: 80%;
+    vertical-align: middle;
+}
+
+
+.titleHead T{
+    position:absolute;
+    color: black;
+    text-align:left;
+    width:50%;
+    top: -10px;
+    font-family: Larsseit Medium;
+    font-size: 30px;
+}
+
+.titleHead c1{
+    position: absolute;
+    top: 120px;
+    width: 50%;
+    text-align: left;
+}

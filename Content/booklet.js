@@ -1,41 +1,63 @@
-var booklet = function(list,pg){
+var current = 0;
 
-    this.divs = [];
-    for(var i=0; i<list.length; i++){
-        this.divs.push(document.getElementById(list[i]));
+function turn(prefix,num){
+
+    var list = [];
+
+    for(var i=0; i<num; i++){
+        var n = i+1;
+        var name = prefix + n.toString();
+        list.push(name)
     }
 
-    this.pgNum = pg;
-    this.updateCurrent();
+    console.log(list);
 
-}
+    var divs = [];
+    for(var i=0; i<list.length;i++){
+        divs.push(document.getElementById(list[i]));
+    }
 
-booklet.prototype.updateCurrent = function () {
+    if(current<list.length-1) {
+        current = current + 1;
+    }else{
+        current = list.length-1;
+    }
 
-    for(var i=0; i<this.divs.length; i++){
-        if(i != this.pgNum){
-            this.divs[i].style.opacity = 0;
+    for(var i=0; i<divs.length; i++){
+        if(i == current){
+            divs[i].style.opacity=1;
         }else{
-            this.divs[i].style.opacity = 1;
+            divs[i].style.opacity = 0;
         }
     }
-
 }
 
-booklet.prototype.turn = function () {
 
-    if(this.pgNum<this.divs.length-1) {
-        this.pgNum = this.pgNum + 1;
-        this.updateCurrent();
+function turnBack(prefix,num){
+
+    var list = [];
+
+    for(var i=0; i<num; i++){
+        var n = i+1;
+        var name = prefix+ n.toString();
+        list.push(name)
     }
 
-}
-
-booklet.prototype.back = function () {
-
-    if(this.pgNum>0) {
-        this.pgNum = this.pgNum - 1;
-        this.updateCurrent();
+    var divs = [];
+    for(var i=0; i<list.length;i++){
+        divs.push(document.getElementById(list[i]));
+    }
+    if(current>0) {
+        current = current - 1;
+    }else{
+        current = 0;
     }
 
+    for(var i=0; i<divs.length; i++){
+        if(i == current){
+            divs[i].style.opacity = 1;
+        }else{
+            divs[i].style.opacity = 0;
+        }
+    }
 }

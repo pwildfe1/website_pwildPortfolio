@@ -1,0 +1,143 @@
+body{
+
+    overflow: scroll;
+
+}
+
+unImg{
+    position:absolute;
+    color: black;
+    font-family: Larsseit Medium;
+    font-size: 1.5vw;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    top: 50%;
+}
+
+ti{
+    position:absolute;
+    color: black;
+    text-align: center;
+    width: 100%;
+    font-family: Larsseit Light;
+    font-size: 24px;
+}
+
+dropBig{
+    position:absolute;
+    color: black;
+    text-align:left;
+    width:100%;
+    font-family: Larsseit Light;
+    font-size: 12px;
+}
+
+.dropDown{
+    position: absolute;
+    top: 5vh;
+    height: 40vh;
+    width: 10vw;
+    left: 3vw;
+}
+
+.dropDown img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 2vh;
+    opacity: .5;
+}
+
+.menu {
+    position: relative;
+    left: 0;
+    top: 2.5vh;
+    height:100%;
+    width: 100%;
+    opacity: 0;
+}
+
+.menu img{
+    position: relative;
+    left: 0;
+    top: .5vh;
+    height: 4vh;
+    opacity: .1;
+}
+
+.element {
+    position: relative;
+    left: 0;
+    top: 1.5vh;
+    width: 100%
+}
+
+
+entry{
+    position: absolute;
+    left: 10%;
+    color: black;
+    text-align: left;
+    font-family: Larsseit Light;
+    font-size: 2vh;
+}
+
+
+bodR{
+    position: absolute;
+    color: black;
+    text-align: left;
+    width: 45%;
+    font-family: Georgia;
+    font-size: 12px;
+    left: 50%
+}
+
+
+.cover01 {
+    position: absolute;
+    top: calc(5vh + 100px);
+    left: 20vw;
+    width: 18vw;
+    height: 24vw;
+}
+
+.cover01 img{
+    position: absolute;
+    max-width:100%;
+}
+
+
+.cover02 {
+    position: absolute;
+    top: calc(5vh + 100px);
+    left: 40vw;
+    width: 18vw;
+    height: 24vw;
+}
+
+.cover02 img{
+    position: absolute;
+    max-width:100%;
+}
+
+.cover03 {
+    position: absolute;
+    top: calc(5vh + 100px);
+    left: 60vw;
+    width: 18vw;
+    height: 24vw;
+}
+
+.cover03 img{
+    position: absolute;
+    max-width:100%;
+}
+
+.titleHead{
+    position:absolute;
+    top: 5vh;
+    left: 20vw;
+    width: 58vw;
+}
