@@ -38,10 +38,10 @@ function turn(prefix,num,mPrefix){
     for(var i=0; i<divs.length; i++){
         if(i == current){
             divs[i].style.opacity=1;
-            markers[i].style.opacity = .75;
+            markers[i].style.opacity = .8;
         }else{
             divs[i].style.opacity = 0;
-            markers[i].style.opacity = .1;
+            markers[i].style.opacity = .3;
         }
     }
 }
@@ -62,10 +62,10 @@ function turnBack(prefix,num,mPrefix){
     for(var i=0; i<divs.length; i++){
         if(i == current){
             divs[i].style.opacity = 1;
-            markers[i].style.opacity = .75;
+            markers[i].style.opacity = .8;
         }else{
             divs[i].style.opacity = 0;
-            markers[i].style.opacity = .1;
+            markers[i].style.opacity = .3;
         }
     }
 }
