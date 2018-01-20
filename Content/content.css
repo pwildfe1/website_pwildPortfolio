@@ -97,7 +97,7 @@ bodC{
     position: absolute;
     top: calc(5vh + 100px + 15vw);
     width: 5vw;
-    right: 15vw
+    left: 80vw
 }
 
 .next img{
@@ -107,38 +107,42 @@ bodC{
     left: 100%;
 }
 
-.stPg {
-    position: absolute;
-    top: calc(2vh + 60px);
-    left: 20vw;
-    width: 60vw;
-    height: 24vw;
-}
-
-.stPg img{
-    position: absolute;
-    opacity: 1;
-    max-width:100%;
-}
-
-
 .pg {
     position: absolute;
     top: calc(2vh + 60px);
     left: 20vw;
     width: 60vw;
     height: 24vw;
+    align-content: center;
 }
 
 .pg img{
     position: absolute;
     opacity: 0;
-    max-width:100%;
+    left:2.5%;
+    max-width:95%;
+}
+
+.markTab {
+    position: absolute;
+    align-content: center;
+    top: 91vh;
+    width: 60vw;
+    left: 20vw;
+    height: 1vh;
+}
+
+.markTab img{
+    position: absolute;
+    width:3%;
+    height:100%;
+    opacity:.1;
 }
 
 .titleHead{
     position:absolute;
+    align-content: center;
     top: 5vh;
     left: 20vw;
-    width: 58vw;
+    width: 60vw;
 }

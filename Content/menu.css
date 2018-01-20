@@ -49,21 +49,22 @@ dropBig{
     opacity: .5;
 }
 
+
 .menu {
-    position: relative;
-    left: 0;
-    top: 2.5vh;
-    height:100%;
-    width: 100%;
-    opacity: 0;
-}
+     position: relative;
+     left: 0;
+     top: 2.5vh;
+     height:100%;
+     width: 100%;
+     opacity: 0;
+ }
 
 .menu img{
     position: relative;
     left: 0;
     top: .5vh;
     height: 4vh;
-    opacity: .1;
+    opacity: .05;
 }
 
 .element {
@@ -83,57 +84,6 @@ entry{
     font-size: 2vh;
 }
 
-
-bodR{
-    position: absolute;
-    color: black;
-    text-align: left;
-    width: 45%;
-    font-family: Georgia;
-    font-size: 12px;
-    left: 50%
-}
-
-
-.cover01 {
-    position: absolute;
-    top: calc(5vh + 100px);
-    left: 20vw;
-    width: 18vw;
-    height: 24vw;
-}
-
-.cover01 img{
-    position: absolute;
-    max-width:100%;
-}
-
-
-.cover02 {
-    position: absolute;
-    top: calc(5vh + 100px);
-    left: 40vw;
-    width: 18vw;
-    height: 24vw;
-}
-
-.cover02 img{
-    position: absolute;
-    max-width:100%;
-}
-
-.cover03 {
-    position: absolute;
-    top: calc(5vh + 100px);
-    left: 60vw;
-    width: 18vw;
-    height: 24vw;
-}
-
-.cover03 img{
-    position: absolute;
-    max-width:100%;
-}
 
 .titleHead{
     position:absolute;
