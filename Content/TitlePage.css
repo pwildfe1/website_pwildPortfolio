@@ -96,7 +96,20 @@ unImg{
 }
 
 
-.pr06 {
+.pr06A {
+    position: absolute;
+    top: calc(2vw*2 + 24.75vw*2 + 5vh);
+    left: 20vw;
+    width: 18vw;
+    height: 24.75vw;
+}
+
+.pr06A img{
+    position: absolute;
+    max-width:100%;
+}
+
+.pr06B {
     position: absolute;
     top: calc(2vw + 24.75vw + 5vh);
     left: 60vw;
@@ -104,7 +117,7 @@ unImg{
     height: 24.75vw;
 }
 
-.pr06 img{
+.pr06B img{
     position: absolute;
     max-width:100%;
 }
