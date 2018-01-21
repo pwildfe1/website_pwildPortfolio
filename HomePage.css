@@ -128,7 +128,7 @@ bodR{
     position:absolute;
     color: black;
     text-align:left;
-    width:75%;
+    width:100%;
     top: -10px;
     font-family: Larsseit Medium;
     font-size: 30px;
@@ -138,5 +138,5 @@ bodR{
     position: absolute;
     top: 120px;
     width: 50%;
-    text-align: left;
+    text-align: justify;
 }

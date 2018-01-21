@@ -12,7 +12,7 @@
             overflow: hidden;
         }
     </style>
-    <link rel="stylesheet" type="text/css" href="ProductPage.css">
+    <link rel="stylesheet" type="text/css" href="TitlePage.css">
     <link rel="stylesheet" type="text/css" href="menu.css">
 </head>
 <body>
@@ -24,9 +24,9 @@
 <script src="styleChanging.js"></script>
 <script src="dropDown.js"></script>
 
-<<div class="dropDown">
+<div class="dropDown">
     <img onmouseover="reveal(this,1)" onmouseleave="reveal(this,.5)" onclick="revealItems('menu')" src="Icons/menu.png">
-    <div class="menu">
+    <div style="opacity: 1" class="menu">
         <div class="element">
             <entry> Home Page </entry>
         </div>
@@ -38,7 +38,7 @@
             <entry> Products </entry>
         </div>
         <a href="ProductHome.html">
-            <img onmouseover="reveal(this,.5)" onmouseleave="reveal(this,.1)" onclick="reveal(this,.75)" src="Icons/dropDownEntry.png">
+            <img style="opacity:.3" onmouseover="reveal(this,.5)" onmouseleave="reveal(this,.3)" onclick="reveal(this,.75)" src="Icons/dropDownEntry.png">
         </a>
 
         <div class="element">
@@ -110,12 +110,12 @@
 
 <div class="pr04">
     <unImg >Feetz</unImg>
-    <a href="https://www.w3schools.com/html/">
+    <a href="https://www.feetz.com/">
         <img onmouseover="reveal(this,.2)" onmouseleave="reveal(this,1)" src="Links/ws_FeetzCover.jpg">
     </a>
 </div>
 
-<div class="pr05">
+<div class="pr05A">
     <unImg >Intel Sensors</unImg>
     <a href="Product/IntelProduct.html">
         <img onmouseover="reveal(this,.2)" onmouseleave="reveal(this,1)" src="Links/ws_Intel04.jpg">
