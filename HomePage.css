@@ -21,8 +21,15 @@ ti{
     text-align: center;
     width: 100%;
     font-family: Larsseit Light;
-    font-size: 24px;
+    font-size: 1.5vw;
 }
+
+@media screen and (max-width: 666px) {
+    ti {
+        font-size: 10px;
+    }
+}
+
 
 rTi{
     position:absolute;
@@ -30,7 +37,13 @@ rTi{
     text-align:right;
     width:100%;
     font-family: Georgia;
-    font-size: 12px;
+    font-size: .75vw;
+}
+
+@media screen and (max-width: 800px) {
+    rTi {
+        font-size: 6px;
+    }
 }
 
 lTi{
@@ -39,8 +52,15 @@ lTi{
     text-align:left;
     width:100%;
     font-family: Georgia;
-    font-size: 12px;
+    font-size: .75vw;
 }
+
+@media screen and (max-width: 800px) {
+    lTi {
+        font-size: 6px;
+    }
+}
+
 
 cp {
     position:absolute;
@@ -72,11 +92,12 @@ bodR{
 
 .cover01 {
     position: absolute;
-    top: calc(5vh + 100px);
+    top: calc(5vw + 10vh + 10px);
     left: 20vw;
     width: 18vw;
     height: 24vw;
 }
+
 
 .cover01 img{
     position: absolute;
@@ -86,7 +107,7 @@ bodR{
 
 .cover02 {
     position: absolute;
-    top: calc(5vh + 100px);
+    top: calc(5vw + 10vh + 10px);
     left: 40vw;
     width: 18vw;
     height: 24vw;
@@ -99,7 +120,7 @@ bodR{
 
 .cover03 {
     position: absolute;
-    top: calc(5vh + 100px);
+    top: calc(5vw + 10vh + 10px);
     left: 60vw;
     width: 18vw;
     height: 24vw;

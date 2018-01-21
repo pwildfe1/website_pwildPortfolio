@@ -37,7 +37,7 @@ dropBig{
     position: absolute;
     top: 5vh;
     height: 40vh;
-    width: 10vw;
+    width: 12vw;
     left: 3vw;
 }
 
@@ -45,7 +45,7 @@ dropBig{
     position: absolute;
     left: 0;
     top: 0;
-    height: 2vh;
+    height: 5%;
     opacity: .5;
 }
 
@@ -53,7 +53,7 @@ dropBig{
 .menu {
      position: relative;
      left: 0;
-     top: 2.5vh;
+     top: 5.5%;
      height:100%;
      width: 100%;
      opacity: 0;
@@ -62,16 +62,17 @@ dropBig{
 .menu img{
     position: relative;
     left: 0;
-    top: .5vh;
-    height: 4vh;
+    top: 2%;
+    height:10%;
+    width: 100%;
     opacity: .1;
 }
 
 .element {
     position: relative;
     left: 0;
-    top: 1.5vh;
-    width: 100%
+    top: 3%;
+    width: 100%;
 }
 
 
@@ -81,7 +82,7 @@ entry{
     color: black;
     text-align: left;
     font-family: Larsseit Light;
-    font-size: 2vh;
+    font-size: 80%;
 }
 
 
