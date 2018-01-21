@@ -15,13 +15,19 @@ unImg{
     top: 50%;
 }
 
-ti{
+.titleHead ti{
     position:absolute;
     color: black;
     text-align: center;
     width: 100%;
     font-family: Larsseit Light;
-    font-size: 24px;
+    font-size: 1.5vw;
+}
+
+@media screen and (max-width: 666px) {
+    .titleHead ti {
+        font-size: 10px;
+    }
 }
 
 rTi{
@@ -31,7 +37,13 @@ rTi{
     left: 90%;
     width: 10%;
     font-family: Georgia;
-    font-size: 13px;
+    font-size: .8vw;
+}
+
+@media screen and (max-width: 800px) {
+    rTi {
+        font-size: 6px;
+    }
 }
 
 lTi{
@@ -40,7 +52,13 @@ lTi{
     text-align:left;
     width:10%;
     font-family: Georgia;
-    font-size: 13px;
+    font-size: .8vw;
+}
+
+@media screen and (max-width: 800px) {
+    lTi {
+        font-size: 6px;
+    }
 }
 
 cp {
@@ -83,7 +101,7 @@ bodC{
 
 .previous{
     position: absolute;
-    top: calc(5vh + 100px + 15vw);
+    top: calc(2vh + 60px + 20vw);
     width: 5vw;
     left: 15vw;
 }
@@ -96,7 +114,7 @@ bodC{
 
 .next{
     position: absolute;
-    top: calc(5vh + 100px + 15vw);
+    top: calc(2vh + 60px + 20vw);
     width: 5vw;
     left: 80vw
 }
