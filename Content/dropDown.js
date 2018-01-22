@@ -11,3 +11,13 @@ function revealItems(name){
     }
 
 }
+
+function growDivVert(name,full){
+    var div = document.getElementById(name);
+    var vh = window.innerHeight/100;
+    if(div.style.height<vh){
+        div.style.height=full*vh;
+    }else{
+        div.style.height=0;
+    }
+}

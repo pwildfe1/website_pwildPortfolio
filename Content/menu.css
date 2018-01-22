@@ -34,6 +34,10 @@ dropBig{
     font-size: 12px;
 }
 
+.toolbar{
+    opacity:1;
+}
+
 .dropDown{
     position: absolute;
     top: 10vh;

@@ -44,12 +44,14 @@ unImg{
 
 .lnk{
     position: relative;
-    left:80%;
+    width:100%;
 }
 
-.lnk linkTi{
-    position:relative;
+linkTi{
+    position:absolute;
     color: black;
+    width: 100%;
+    text-align: right;
     font-family: "Larsseit ExtraBold";
     font-size: 1.5vh;
 }
@@ -176,11 +178,4 @@ unImg{
 .pr06B img{
     position: absolute;
     max-width:100%;
-}
-
-.titleHead{
-    position:absolute;
-    top: 5vh;
-    left: 20vw;
-    width: 58vw;
 }
