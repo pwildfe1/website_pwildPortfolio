@@ -1,6 +1,6 @@
 body{
 
-    overflow: scroll;
+    overflow-y: scroll;
 
 }
 
@@ -150,7 +150,7 @@ bodR{
     color: black;
     text-align:left;
     width:100%;
-    top: -10px;
+    top: 30px;
     font-family: Larsseit Medium;
     font-size: 30px;
 }

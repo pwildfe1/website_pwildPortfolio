@@ -1,6 +1,6 @@
 body{
 
-    overflow: scroll;
+    overflow-y: scroll;
 
 }
 
@@ -15,9 +15,65 @@ unImg{
     top: 50%;
 }
 
+.contain{
+    position:absolute;
+    top:7vh;
+    left:2vw;
+    width:96vw;
+    outline-style: solid;
+    outline-width: thin;
+}
+
+.heading{
+    position:absolute;
+    top: 2vh;
+    left: 3vw;
+    width: 94vw;
+    height: 3vh;
+    vertical-align: bottom;
+}
+
+.heading hTi{
+    position:absolute;
+    color: black;
+    text-align: left;
+    width: 30%;
+    font-family: Larsseit Light;
+    font-size: 3vh;
+}
+
+.lnk{
+    position: relative;
+    left:80%;
+}
+
+.lnk linkTi{
+    position:relative;
+    color: black;
+    font-family: "Larsseit ExtraBold";
+    font-size: 1.5vh;
+}
+
+
+@media screen and (max-width: 666px) {
+    ti {
+        font-size: 10px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    rTi {
+        font-size: 6px;
+    }
+}
+
+
 .pr01 {
     position: absolute;
-    top: 5vh;
+    top: 10vh;
     left: 20vw;
     width: 18vw;
     height: 24.75vw;
@@ -31,7 +87,7 @@ unImg{
 
 .pr02 {
     position: absolute;
-    top: 5vh;
+    top: 10vh;
     left: 40vw;
     width: 18vw;
     height: 24.75vw;
@@ -44,7 +100,7 @@ unImg{
 
 .pr03 {
     position: absolute;
-    top: 5vh;
+    top: 10vh;
     left: 60vw;
     width: 18vw;
     height: 24.75vw;
@@ -58,7 +114,7 @@ unImg{
 
 .pr04 {
     position: absolute;
-    top: calc(2vw + 24.75vw + 5vh);
+    top: calc(2vw + 24.75vw + 10vh);
     left: 20vw;
     width: 18vw;
     height: 24.75vw;
@@ -71,7 +127,7 @@ unImg{
 
 .pr05A {
     position: absolute;
-    top: calc(2vw + 24.75vw + 5vh);
+    top: calc(2vw + 24.75vw + 10vh);
     left: 40vw;
     width: 38vw;
     height: 49.5vw;
@@ -84,7 +140,7 @@ unImg{
 
 .pr05B {
     position: absolute;
-    top: calc(2vw + 24.75vw + 5vh);
+    top: calc(2vw + 24.75vw + 10vh);
     left: 40vw;
     width: 18vw;
     height: 24.75vw;
@@ -98,7 +154,7 @@ unImg{
 
 .pr06A {
     position: absolute;
-    top: calc(2vw*2 + 24.75vw*2 + 5vh);
+    top: calc(2vw*2 + 24.75vw*2 + 10vh);
     left: 20vw;
     width: 18vw;
     height: 24.75vw;
@@ -111,7 +167,7 @@ unImg{
 
 .pr06B {
     position: absolute;
-    top: calc(2vw + 24.75vw + 5vh);
+    top: calc(2vw + 24.75vw + 10vh);
     left: 60vw;
     width: 18vw;
     height: 24.75vw;

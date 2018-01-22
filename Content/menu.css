@@ -1,6 +1,6 @@
 body{
 
-    overflow: scroll;
+    overflow-y: scroll;
 
 }
 
@@ -36,7 +36,7 @@ dropBig{
 
 .dropDown{
     position: absolute;
-    top: 5vh;
+    top: 10vh;
     height: 40vh;
     width: 12vw;
     left: 3vw;
