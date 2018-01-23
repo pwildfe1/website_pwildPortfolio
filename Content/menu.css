@@ -86,6 +86,7 @@ entry{
     left: 10%;
     color: black;
     text-align: left;
+    vertical-align: text-top;
     font-family: Larsseit Light;
     font-size: 80%;
 }

@@ -17,8 +17,7 @@ unImg{
 
 .titleHead{
     position:absolute;
-    align-content: center;
-    top: 5vh;
+    top: 2.5vw;
     left: 20vw;
     width: 60vw;
 }
@@ -27,17 +26,21 @@ unImg{
     position:absolute;
     color: black;
     text-align: center;
+    top: .32vw;
     left: 85%;
     width: 15%;
 }
 
 .titleHead .forLink linkTxt{
+    vertical-align: text-top;
     font-family: Georgia;
     font-size: .8vw;
 }
 
 .titleHead img{
     position: absolute;
+    vertical-align: bottom;
+    height:1.6vw;
     left: 85%;
     width: 15%;
     opacity: .25;
