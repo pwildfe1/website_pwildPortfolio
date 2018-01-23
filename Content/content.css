@@ -15,6 +15,34 @@ unImg{
     top: 50%;
 }
 
+.titleHead{
+    position:absolute;
+    align-content: center;
+    top: 5vh;
+    left: 20vw;
+    width: 60vw;
+}
+
+.titleHead .forLink{
+    position:absolute;
+    color: black;
+    text-align: center;
+    left: 85%;
+    width: 15%;
+}
+
+.titleHead .forLink linkTxt{
+    font-family: Georgia;
+    font-size: .8vw;
+}
+
+.titleHead img{
+    position: absolute;
+    left: 85%;
+    width: 15%;
+    opacity: .25;
+}
+
 .titleHead ti{
     position:absolute;
     color: black;
@@ -46,6 +74,8 @@ rTi{
     }
 }
 
+
+
 lTi{
     position:absolute;
     color: black;
@@ -60,6 +90,8 @@ lTi{
         font-size: 6px;
     }
 }
+
+
 
 cp {
     position:absolute;
@@ -167,10 +199,4 @@ bodC{
     opacity:.1;
 }
 
-.titleHead{
-    position:absolute;
-    align-content: center;
-    top: 5vh;
-    left: 20vw;
-    width: 60vw;
-}
+

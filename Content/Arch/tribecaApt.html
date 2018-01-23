@@ -21,7 +21,7 @@
 <script src="../booklet.js"></script>
 <script src="../dropDown.js"></script>
 
-<<div class="dropDown">
+<<div class="dropDown" style="top:5vh">
     <img onmouseover="reveal(this,1)" onmouseleave="reveal(this,.5)" onclick="revealItems('menu')" src="../Icons/menu.png">
     <div class="menu">
         <div class="element">
@@ -86,12 +86,17 @@
     <ti> P R E S E N T &nbsp &nbsp A R C H I T E C T U R E </ti>
 
     <a href="../ArchitectureHome.html">
-        <br/>
-        <lTi> Back </lTi>
+        <div class="forLink" style="text-align:left; left:0; width:10%">
+            <linkTxt> Back </linkTxt>
+        </div>
     </a>
 
+    <div class="forLink">
+        <linkTxt> Present Architecture </linkTxt>
+    </div>
+
     <a href="http://presentarchitecture.com/">
-        <rTi> Website </rTi>
+        <img onmouseover="reveal(this,.6)" onmouseleave="reveal(this,.25)" onclick="reveal(this,.75)" src="../Icons/dropDownEntry.png">
     </a>
 
 </div>
