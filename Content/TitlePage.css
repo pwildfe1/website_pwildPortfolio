@@ -37,6 +37,7 @@ unImg{
     position:absolute;
     color: black;
     text-align: left;
+    vertical-align: text-bottom;
     width: 30%;
     font-family: Larsseit Light;
     font-size: 3vh;
@@ -52,8 +53,9 @@ linkTi{
     color: black;
     width: 100%;
     text-align: right;
+    vertical-align: text-top;
     font-family: "Larsseit ExtraBold";
-    font-size: 1.5vh;
+    font-size: 1.75vmin;
 }
 
 
