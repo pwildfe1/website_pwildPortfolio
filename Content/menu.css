@@ -98,3 +98,10 @@ entry{
     left: 20vw;
     width: 58vw;
 }
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

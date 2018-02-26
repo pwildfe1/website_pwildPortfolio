@@ -14,6 +14,7 @@
     </style>
     <link rel="stylesheet" type="text/css" href="../content.css">
     <link rel="stylesheet" type="text/css" href="../menu.css">
+    <link rel="stylesheet" type="text/css" href="../TitlePage.css">
 </head>
 <body>
 
@@ -21,69 +22,8 @@
 <script src="../booklet.js"></script>
 <script src="../dropDown.js"></script>
 
-<<div class="dropDown" style="top:5vh">
-    <img onmouseover="reveal(this,1)" onmouseleave="reveal(this,.5)" onclick="revealItems('menu')" src="../Icons/menu.png">
-    <div class="menu">
-        <div class="element">
-            <entry> Home Page </entry>
-        </div>
-        <a href="../../index.html">
-            <img onmouseover="reveal(this,.5)" onmouseleave="reveal(this,.1)" onclick="reveal(this,.75)" src="../Icons/dropDownEntry.png">
-        </a>
 
-        <div class="element">
-            <entry> Products </entry>
-        </div>
-        <a href="../ProductHome.html">
-            <img style="opacity:.3" onmouseover="reveal(this,.5)" onmouseleave="reveal(this,.3)" onclick="reveal(this,.75)" src="../Icons/dropDownEntry.png">
-        </a>
-
-        <div class="element">
-            <entry> Architecture </entry>
-        </div>
-        <a href="../ArchitectureHome.html">
-            <img onmouseover="reveal(this,.5)" onmouseleave="reveal(this,.1)" onclick="reveal(this,.75)" src="../Icons/dropDownEntry.png">
-        </a>
-
-        <div class="element">
-            <entry> Technology </entry>
-        </div>
-        <a href="../Technology.html">
-            <img onmouseover="reveal(this,.5)" onmouseleave="reveal(this,.1)" onclick="reveal(this,.75)" src="../Icons/dropDownEntry.png">
-        </a>
-
-        <div class="element">
-            <entry> Resume </entry>
-        </div>
-        <a href="../Resume.html">
-            <img onmouseover="reveal(this,.5)" onmouseleave="reveal(this,.1)" onclick="reveal(this,.75)" src="../Icons/dropDownEntry.png">
-        </a>
-
-        <div class="element">
-            <entry> About Me </entry>
-        </div>
-        <a href="../AboutMe.html">
-            <img onmouseover="reveal(this,.5)" onmouseleave="reveal(this,.1)" onclick="reveal(this,.75)" src="../Icons/dropDownEntry.png">
-        </a>
-
-        <div class="element">
-            <entry> GitHub </entry>
-        </div>
-        <a href="https://github.com/pwildfe1">
-            <img onmouseover="reveal(this,.5)" onmouseleave="reveal(this,.1)" onclick="reveal(this,.75)" src="../Icons/dropDownEntry.png">
-        </a>
-
-        <div class="element">
-            <entry> LinkedIn </entry>
-        </div>
-        <a href="https://www.linkedin.com/in/peter-wildfeuer-80b12228/">
-            <img onmouseover="reveal(this,.5)" onmouseleave="reveal(this,.1)" onclick="reveal(this,.75)" src="../Icons/dropDownEntry.png">
-        </a>
-    </div>
-</div>
-
-
-<div class="titleHead">
+<div class="titleContentHead">
     <ti> U N Y Q  </ti>
 
     <a href="../ProductHome.html">
@@ -111,18 +51,38 @@
 </div>
 
 <div class="pg">
-    <img style="opacity: 1" id="pg01" src="../Links/ws_legCover.jpg">
-    <img id="pg02" src="../Links/ws_legCover2.jpg">
-    <img id="pg03" src="../Links/ws_legCover3.jpg">
-    <img id="pg04" src="../Links/ws_legCover4.jpg">
+    <img style="opacity: 1" id="pg01" src="LegCover/ws_unyq.jpg">
+    <img id="pg02" src="LegCover/ws_unyq2.jpg">
+    <img id="pg03" src="LegCover/ws_unyq3.jpg">
+    <img id="pg04" src="LegCover/ws_unyq4.jpg">
+    <div style="left: 35%" class="marker">
+        <img style="opacity:.8;" id="marker01" src="../Icons/dropDownEntry.png">
+        <img style="opacity:.3;" id="marker02" src="../Icons/dropDownEntry.png">
+        <img style="opacity:.3;" id="marker03" src="../Icons/dropDownEntry.png">
+        <img style="opacity:.3;" id="marker04" src="../Icons/dropDownEntry.png">
+    </div>
 </div>
 
-<div class="markTab">
-    <img style="opacity:.8; left:39%" id="marker01" src="../Icons/dropDownEntry.png">
-    <img style="opacity:.3; left:45%" id="marker02" src="../Icons/dropDownEntry.png">
-    <img style="opacity:.3; left:51%" id="marker03" src="../Icons/dropDownEntry.png">
-    <img style="opacity:.3; left:57%" id="marker04" src="../Icons/dropDownEntry.png">
+<div class="heading">
+    <hTi>
+        Peter Wildfeuer
+    </hTi>
+    <linkTi>
+        <a href="../../index.html" style="color: black; opacity:.4" onmouseover="reveal(this,1)" onmouseleave="reveal(this,.4)">Home</a>
+        &nbsp &nbsp &nbsp
+        <a href="https://www.linkedin.com/in/peter-wildfeuer-80b12228/" style="color: black; opacity:.4" onmouseover="reveal(this,1)" onmouseleave="reveal(this,.4)">
+            LinkedIn
+        </a>
+        &nbsp &nbsp &nbsp
+        <a href="https://github.com/pwildfe1" style="color: black; opacity:.4" onmouseover="reveal(this,1)" onmouseleave="reveal(this,.4)">
+            GitHub
+        </a>
+        &nbsp &nbsp &nbsp
+        <a href="../AboutMe.html" style="color: black; opacity:.4" onmouseover="reveal(this,1)" onmouseleave="reveal(this,.4)"> About Me </a>
+    </linkTi>
 </div>
+
+<div class="contain"></div>
 
 
 </body>

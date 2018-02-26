@@ -16,7 +16,7 @@ unImg{
 }
 
 .contain{
-    position:absolute;
+    position:fixed;
     top:7vh;
     left:2vw;
     width:96vw;
@@ -25,12 +25,12 @@ unImg{
 }
 
 .heading{
-    position:absolute;
-    top: 2vh;
+    position:fixed;
+    top: 0vh;
     left: 3vw;
     width: 94vw;
-    height: 3vh;
-    vertical-align: bottom;
+    height: 7vh;
+    background-color: white;
 }
 
 .heading hTi{
@@ -38,8 +38,10 @@ unImg{
     color: black;
     text-align: left;
     vertical-align: text-bottom;
+    top: 50%;
     width: 30%;
     font-family: Larsseit Light;
+    line-height: 1.75vmin;
     font-size: 3vh;
 }
 
@@ -53,7 +55,8 @@ linkTi{
     color: black;
     width: 100%;
     text-align: right;
-    vertical-align: text-top;
+    vertical-align: text-bottom;
+    top: 50%;
     font-family: "Larsseit ExtraBold";
     font-size: 1.75vmin;
 }
@@ -66,14 +69,16 @@ linkTi{
 }
 
 
-
-
 @media screen and (max-width: 800px) {
     rTi {
         font-size: 6px;
     }
 }
 
+
+.fullPg {
+    position:absolute;
+}
 
 .pr01 {
     position: absolute;
@@ -180,4 +185,11 @@ linkTi{
 .pr06B img{
     position: absolute;
     max-width:100%;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }

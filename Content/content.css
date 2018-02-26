@@ -15,14 +15,14 @@ unImg{
     top: 50%;
 }
 
-.titleHead{
-    position:absolute;
-    top: 2.5vw;
+.titleContentHead{
+    position:relative;
+    top: 10vh;
     left: 20vw;
     width: 60vw;
 }
 
-.titleHead .forLink{
+.titleContentHead .forLink{
     position:absolute;
     color: black;
     text-align: center;
@@ -31,13 +31,13 @@ unImg{
     width: 15%;
 }
 
-.titleHead .forLink linkTxt{
+.titleContentHead .forLink linkTxt{
     vertical-align: text-top;
     font-family: Georgia;
     font-size: .8vw;
 }
 
-.titleHead img{
+.titleContentHead img{
     position: absolute;
     vertical-align: bottom;
     height:1.6vw;
@@ -46,10 +46,20 @@ unImg{
     opacity: .25;
 }
 
-.titleHead ti{
+.titleContentHead ti{
     position:absolute;
     color: black;
     text-align: center;
+    width: 100%;
+    font-family: Larsseit Light;
+    font-size: 1.5vw;
+}
+
+.titleContentHead bti{
+    position:absolute;
+    color: black;
+    text-align: center;
+    top: 10vh;
     width: 100%;
     font-family: Larsseit Light;
     font-size: 1.5vw;
@@ -149,7 +159,7 @@ bodC{
 
 .next{
     position: absolute;
-    top: calc(2vh + 60px + 20vw);
+    top: calc(12vh + 20vw);
     width: 5vw;
     left: 80vw
 }
@@ -162,11 +172,11 @@ bodC{
 }
 
 .pg {
-    position: absolute;
-    top: calc(2vh + 60px);
-    left: 20vw;
-    width: 60vw;
-    height: 24vw;
+    position: relative;
+    top: 15vh;
+    left: 22vw;
+    width: 56vw;
+    height: 35vw;
     align-content: center;
 }
 
@@ -184,6 +194,19 @@ bodC{
     text-align: center;
     font-family: Georgia;
     font-size: 10vh;
+}
+
+.pg .marker{
+    position: absolute;
+    top: 105%;
+    width: 100%;
+}
+
+.pg .marker img{
+    position: relative;
+    left:5%;
+    width:5%;
+    opacity:.1;
 }
 
 .markTab {
