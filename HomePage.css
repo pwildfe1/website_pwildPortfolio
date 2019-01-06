@@ -131,6 +131,14 @@ bodR{
     max-width:100%;
 }
 
+.underSection {
+    position: absolute;
+    top: calc(5vw + 10vh + 10px);
+    left: 20vw;
+    width: 60vw;
+    height: 24vw;
+}
+
 .titleHead{
     position:absolute;
     top: 5vh;
