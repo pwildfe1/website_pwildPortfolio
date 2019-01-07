@@ -18,8 +18,8 @@ unImg{
 .titleContentHead{
     position:relative;
     top: 10vh;
-    left: 20vw;
-    width: 60vw;
+    left: 22vw;
+    width: 58vw;
 }
 
 .titleContentHead .forLink{
@@ -35,6 +35,7 @@ unImg{
     vertical-align: text-top;
     font-family: Georgia;
     font-size: .8vw;
+    font-style: italic;
 }
 
 .titleContentHead img{
