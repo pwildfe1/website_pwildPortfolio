@@ -173,7 +173,7 @@ bodC{
 
 .pg {
     position: relative;
-    top: 15vh;
+    top: 18vh;
     left: 22vw;
     width: 56vw;
     height: 35vw;
@@ -183,8 +183,8 @@ bodC{
 .pg img{
     position: absolute;
     opacity: 0;
-    left:2.5%;
-    max-width:95%;
+    left:0%;
+    max-width:100%;
 }
 
 .pg bL{
