@@ -92,7 +92,7 @@ bodR{
 
 .cover01 {
     position: absolute;
-    top: calc(5vw + 10vh + 10px);
+    top: calc(5vw + 5vh + 10px);
     left: 20vw;
     width: 18vw;
     height: 24vw;
@@ -107,7 +107,7 @@ bodR{
 
 .cover02 {
     position: absolute;
-    top: calc(5vw + 10vh + 10px);
+    top: calc(5vw + 5vh + 10px);
     left: 40vw;
     width: 18vw;
     height: 24vw;
@@ -120,7 +120,7 @@ bodR{
 
 .cover03 {
     position: absolute;
-    top: calc(5vw + 10vh + 10px);
+    top: calc(5vw + 5vh + 10px);
     left: 60vw;
     width: 18vw;
     height: 24vw;
