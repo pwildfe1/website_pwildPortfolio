@@ -66,7 +66,7 @@ cp {
     position:absolute;
     width: 100%;
     top:120%;
-    font-family:Georgia;
+    font-family: "Larsseit Medium";
     font-size:12px;
 }
 
@@ -92,10 +92,10 @@ bodR{
 
 .cover01 {
     position: absolute;
-    top: calc(5vw + 5vh + 10px);
-    left: 20vw;
-    width: 18vw;
-    height: 24vw;
+    top: 0px;
+    left: 12.5vw;
+    width: 25vw;
+    height: 100%;
 }
 
 
@@ -104,18 +104,40 @@ bodR{
     max-width:100%;
 }
 
+.cover01 h1{
+    font-family: "Larsseit Medium";
+    font-size: 4vmin;
+    text-align: justify;
+    text-align-last: left;
+}
+
+.cover01 h2{
+    font-family: "Larsseit Thin";
+    font-size: 2vmin;
+    text-align: justify;
+    text-align-last: left;
+}
+
+.cover01 subH1{
+    font-family: Georgia;
+    font-size: 2vmin;
+    text-align: justify;
+    text-align-last: left;
+}
 
 .cover02 {
     position: absolute;
-    top: calc(5vw + 5vh + 10px);
-    left: 40vw;
-    width: 18vw;
-    height: 24vw;
+    top: 0px;
+    left: 50vw;
+    width: 48vw;
+    height: 100%;
 }
 
 .cover02 img{
     position: absolute;
-    max-width:100%;
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
 }
 
 .cover03 {
