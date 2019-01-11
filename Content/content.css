@@ -147,7 +147,7 @@ bodC{
 
 .previous{
     position: absolute;
-    top: calc(2vh + 60px + 20vw);
+    top: calc(12vh + 20vw);
     width: 5vw;
     left: 15vw;
 }
