@@ -105,17 +105,19 @@ bodR{
 }
 
 .cover01 h1{
-    font-family: "Larsseit Medium";
-    font-size: 4vmin;
-    text-align: justify;
-    text-align-last: left;
+    font-family: Larsseit Medium;
+    font-size: 3vmin;
 }
 
 .cover01 h2{
-    font-family: "Larsseit Thin";
+    font-family: Georgia;
+    font-size: 3.5vmin;
+    line-height: 110%;
+}
+
+.cover01 h3{
+    font-family: Georgia;
     font-size: 2vmin;
-    text-align: justify;
-    text-align-last: left;
 }
 
 .cover01 subH1{
@@ -123,6 +125,20 @@ bodR{
     font-size: 2vmin;
     text-align: justify;
     text-align-last: left;
+}
+
+.cover01 .blurb{
+    position: relative;
+    font-family: "Larsseit Thin";
+    top: 12.5%;
+}
+
+.breakLine{
+    position:relative;
+    width:25%;
+    outline-style: solid;
+    outline-width: thin;
+    outline-color: darkslategrey;
 }
 
 .cover02 {
@@ -191,3 +207,4 @@ bodR{
     width: 50%;
     text-align: justify;
 }
+
