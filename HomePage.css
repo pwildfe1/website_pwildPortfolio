@@ -198,17 +198,18 @@ bodR{
     color: black;
     text-align:left;
     width:100%;
-    top: 5vh;
+    top: 25%;
     font-family: Larsseit Medium;
     font-size: 5vmin;
+    line-height: 140%;
 }
 
 .titleHead c1{
-    position: relative;
-    top: 20%;
+    position: absolute;
+    top: 50%;
     width: 100%;
     text-align: justify;
     font-size: 3vmin;
-    line-height: 3vmin;
+    line-height: 120%;
 }
 
