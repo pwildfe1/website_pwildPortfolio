@@ -45,7 +45,7 @@ unImg{
     text-align: left;
     vertical-align: text-bottom;
     top: 50%;
-    width: 40%;
+    width: 60%;
     font-family: "Larsseit ExtraBold";
     line-height: 1.75vmin;
     font-size: 1.75vmin;
@@ -54,11 +54,11 @@ unImg{
 .heading cTi{
     position:absolute;
     text-align: center;
-    top: 50%;
+    top: 40%;
     left: 40%;
     width: 20%;
     font-family: "Larsseit Medium";
-    line-height: 1.75vmin;
+    line-height: 3vmin;
     font-size: 3vmin;
 }
 
