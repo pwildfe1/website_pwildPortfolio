@@ -4,6 +4,7 @@ var frames = 100;
 var counter = 1/frames;
 var prevCounter = 1 + 1/frames;
 var index = 0;
+var pause = 75;
 carousel();
 
 // function carousel() {
@@ -20,7 +21,6 @@ carousel();
 
 function carousel() {
     var i;
-    var pause = 250;
     var x = document.getElementsByClassName("gallery");
     for (i=0; i<x.length; i++){
         if (i!=myIndex || i!=prevIndex) {
@@ -31,9 +31,9 @@ function carousel() {
         prevIndex = myIndex;
         myIndex++;
         counter = 1/frames;
-        pause = 3000;
+        pause = 2000;
     }else{
-        pause = 100;
+        pause = 75;
     }
     if (prevIndex==x.length-1){
         myIndex = 0;
