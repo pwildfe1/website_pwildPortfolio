@@ -18,36 +18,10 @@
 </head>
 <body>
 
-<script src="../../jquery-1.12.2.min.js"></script>
-<script src="../../jquery-3.3.1.min.js"></script>
 <script src="../styleChanging.js"></script>
 <script src="../booklet.js"></script>
-<script src="../evolvingImage.js"></script>
 <script src="../dropDown.js"></script>
 
-<script>
-    var images = [];
-    var markers = [];
-
-    var project = "LegCover";
-    var stSuffix = "unyq";
-    var fileType = ".jpg";
-    var count = 4;
-
-    for(var i=0; i<count; i++){
-        var index = i+1;
-        if (i>0){
-            var suffix = stSuffix + index.toString();
-        }else{
-            suffix = stSuffix;
-        }
-        images.push(project + '/ws_' + suffix + fileType);
-        markers.push('marker0' + index.toString())
-    }
-
-    var booklet = new evolvingImage('page',images,markers);
-
-</script>
 
 <div class="titleContentHead">
     <ti> U N Y Q  </ti>
@@ -67,15 +41,18 @@
 </div>
 
 <div class="next">
-    <img onmouseover="reveal(this,1)" onmouseout="reveal(this,.5)" onclick="booklet.nextImg()" src="../Icons/nextPage.png">
+    <img onmouseover="reveal(this,1)" onmouseout="reveal(this,.5)" onclick="turn('pg0',4,'marker0')" src="../Icons/nextPage.png">
 </div>
 
 <div class="previous">
-    <img onmouseover="reveal(this,1)" onmouseout="reveal(this,.5)" onclick="booklet.prevImg()" src="../Icons/previousPage.png">
+    <img onmouseover="reveal(this,1)" onmouseout="reveal(this,.5)" onclick="turnBack('pg0',4,'marker0')" src="../Icons/previousPage.png">
 </div>
 
 <div class="pg">
-    <img style="opacity: 1" id="page" src="LegCover/ws_unyq.jpg">
+    <img style="opacity: 1" id="pg01" src="LegCover/ws_unyq.jpg">
+    <img id="pg02" src="LegCover/ws_unyq2.jpg">
+    <img id="pg03" src="LegCover/ws_unyq3.jpg">
+    <img id="pg04" src="LegCover/ws_unyq4.jpg">
     <div style="left: 35%" class="marker">
         <img style="opacity:.8;" id="marker01" src="../Icons/dropDownEntry.png">
         <img style="opacity:.3;" id="marker02" src="../Icons/dropDownEntry.png">
