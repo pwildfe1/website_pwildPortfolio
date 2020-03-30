@@ -4,12 +4,71 @@ body{
 
 }
 
+.chapterContainer{
+    position:relative;
+    width: 80%;
+    padding-top: 80px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 80px;
+    overflow: hidden;
+}
 
-captionTxt{
+.chapterContainer .chapterRow{
+    position:relative;
+    width:100%;
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+    /*text-align: center;*/
+    align-content:center;
+}
+
+/* Clear floats after image containers */
+.chapterContainer .chapterRow::after {
+    content: "";
+    clear: both;
+    display: table;
+    align-content: center;
+}
+
+.chapterPanel {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    overflow: hidden;
+    max-height: 900px;
+}
+
+.chapterPanel img{
+    width: 100%;
+}
+
+.chapterText {
     position: absolute;
-    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
     font-family: 'Roboto', sans-serif;
 }
+
+@media screen and (max-width: 1200px) {
+    .chapterContainer {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .chapterPanel {
+        width: 49%;
+        padding: .5%;
+    }
+}
+
+
 
 
 .contain{
@@ -19,20 +78,6 @@ captionTxt{
     width:96vw;
     outline-style: solid;
     outline-width: thin;
-}
-
-
-@media screen and (max-width: 666px) {
-    ti {
-        font-size: 10px;
-    }
-}
-
-
-@media screen and (max-width: 800px) {
-    rTi {
-        font-size: 6px;
-    }
 }
 
 .panelContainer{
@@ -58,12 +103,30 @@ captionTxt{
     font-size: 10vw;
 }
 
+.projectCover{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: calc(20px + 1vw);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.projectCover img{
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+
 .panel {
     position:relative;
-    width: 60%;
+    width: 50%;
     padding-top: 20px;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 25%;
+    padding-right: 25%;
     padding-bottom: 20px;
     overflow: hidden;
 }
@@ -86,6 +149,20 @@ captionTxt{
     font-weight: 700;
 }
 
+.coverTextDark{
+    display: inline-block;
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: black;
+    color: white;
+    font-family: 'Lora', serif;
+    font-size: calc(12px + .8vw);
+    text-align: justify;
+}
+
 .panelText{
     display: inline-block;
     width: 80%;
@@ -95,7 +172,23 @@ captionTxt{
     padding-right: 10%;
     color: black;
     font-family: 'Lora', serif;
-    font-size: calc(12px + .8vw);
+    font-size: calc(16px + .6vw);
+    text-align: justify;
+}
+
+.panelTextDark{
+    display: inline-block;
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: black;
+    color: white;
+    font-family: 'Lora', serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: calc(14px + .4vw);
     text-align: justify;
 }
 
@@ -106,8 +199,8 @@ captionTxt{
     padding: 10px 10px 10px 10px;
     border-radius: 10px;
     background-color: rgba(0,0,0,.75);
-    font-family: 'Lora', serif;
-    font-size: calc(12px + .6vw);
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(12px + .4vw);
     font-style: italic;
     text-align: left;
     color: white;
