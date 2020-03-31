@@ -1,0 +1,38 @@
+<div class="heading" style="background-color: black">
+    <hTi>
+        <a href="../index.html" style="color: white; text-decoration: none;" onmouseover="reveal(this,.4)" onmouseleave="reveal(this,1)">
+            P E T E R &nbsp <span style="white-space: nowrap"> &nbsp  W I L D F E U E R </span>
+        </a>
+    </hTi>
+    <div class="hamburger" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+</div>
+
+
+
+<div id="mainMenu" class="MENU">
+    <a href="../index.html" style="color: white; opacity:.4" onmouseover="reveal(this,1)" onmouseleave="reveal(this,.4)">Home</a>
+    <br>
+    <br>
+    <a href="ProductHome_v2.html" style="color: white; opacity:.4" onmouseover="reveal(this,1)" onmouseleave="reveal(this,.4)">Product</a>
+    <br>
+    <br>
+    <a href="Technology_v2.html" style="color: white; opacity:.4" onmouseover="reveal(this,1)" onmouseleave="reveal(this,.4)">Technology</a>
+    <br>
+    <br>
+    <a href="AboutMe_v2.html" style="color: white; opacity:.4" onmouseover="reveal(this,1)" onmouseleave="reveal(this,.4)">About Me</a>
+</div>
+
+
+<script>
+    function myFunction(x) {
+        x.classList.toggle("change");
+        var menu = document.getElementById("mainMenu");
+        if(menu.style.display === "block"){
+            menu.style.display = "none"
+        }else{menu.style.display = "block"}
+    }
+</script>

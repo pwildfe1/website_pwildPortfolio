@@ -1,0 +1,108 @@
+.heading{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    padding: 40px;
+}
+
+.majorBody{
+    color: white;
+    background-color: black;
+    width: 60%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 80px;
+}
+
+.majorBody headFont{
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(14px + 1.5vw);
+}
+
+.majorBody bodyFont{
+    font-family: 'Lora', serif;
+    font-size: calc(12px + .8vw);
+}
+
+.majorBody profileImage{
+    width: 100%;
+    overflow: hidden;
+    max-height:400px;
+    height: 400px;
+}
+
+.heading hTi{
+    position:absolute;
+    color: white;
+    text-align: left;
+    vertical-align: text-bottom;
+    top: 50%;
+    width: 40%;
+    font-family: 'Roboto', sans-serif;
+    /*line-height: 1em;*/
+    font-size: 1em;
+}
+
+
+.heading .hamburger {
+    position:absolute;
+    /*align-content: center;*/
+    vertical-align: middle;
+    right: 100px;
+    bottom: 1em;
+    /*background-color: aqua;*/
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    /*background-color: #333;*/
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.8s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+    /*-webkit-transform: scaleX(10);*/
+    /*transform: scaleX(10)*/
+}
+
+.change .bar2 {
+    -webkit-transform: scaleX(10) translate(0px,250px);
+    transform: scaleX(10) translate(0px,330px);
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(225deg) translate(9px, 6px);
+    transform: rotate(225deg) translate(9px, 6px);
+}
+
+.footer {
+
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    padding: 20px 20px 20px 20px;
+    color: white;
+    text-align: center;
+    vertical-align: text-bottom;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+
+}
+.MENU {
+    position:fixed;
+    top:80px;
+    right: 0;
+    width: 200px;
+    padding: 10px;
+    display: none;
+    overflow: hidden;
+    background: rgba(0,0,0,.75);
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+}
