@@ -31,13 +31,21 @@
     height: 400px;
 }
 
+@media screen and (max-width: 1200px) {
+    .majorBody {
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
 .heading hTi{
     position:absolute;
     color: white;
     text-align: left;
     vertical-align: text-bottom;
     top: 50%;
-    width: 40%;
+    width: 50%;
     font-family: 'Roboto', sans-serif;
     /*line-height: 1em;*/
     font-size: 1em;
