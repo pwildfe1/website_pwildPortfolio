@@ -5,6 +5,31 @@
     padding: 40px;
 }
 
+.majorBody{
+    color: white;
+    background-color: black;
+    width: 60%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 80px;
+}
+
+.majorBody headFont{
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(14px + 1.5vw);
+}
+
+.majorBody bodyFont{
+    font-family: 'Lora', serif;
+    font-size: calc(12px + .8vw);
+}
+
+.majorBody profileImage{
+    width: 100%;
+    overflow: hidden;
+    max-height:400px;
+    height: 400px;
+}
 
 .heading hTi{
     position:absolute;
