@@ -4,6 +4,19 @@ body{
 
 }
 
+.chapterText {
+    position: absolute;
+    width: 30%;
+    padding: 1%;
+    /*background-color: blue;*/
+    font-size: calc(.75vw + 14px);
+    transform: translate(0%, 250px);
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    opacity: 0;
+    /*display: inline-block;*/
+}
+
 .chapterContainer{
     position:relative;
     width: 80%;
@@ -36,9 +49,9 @@ body{
     width: 30%;
     padding: 1%;
     overflow: hidden;
-    max-height: 900px;
+    max-height: 1000px;
     text-align: center;
-    color: black;
+    color: rgba(255,255,255,0);
     font-size: calc(20px + .8vw);
 }
 
@@ -46,14 +59,11 @@ body{
     width: 100%;
 }
 
-.chapterText {
-    position: absolute;
-    top: 50%;
-    left: 15%;
-    background-color: black;
-    transform: translate(-50%, -50%);
-    color: white;
+.chapterPanel figcaption{
+    font-size: 14px;
+    color:white;
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1200px) {
@@ -68,6 +78,11 @@ body{
     .chapterPanel {
         width: 49%;
         padding: .5%;
+    }
+    .chapterText{
+        width: 49%;
+        padding: .5%;
+        transform: translate(0%, 150px);
     }
 }
 
