@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Peter Wildfeuer Design</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <style>
+        body {
+            background-color: #ffffff;
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../content.css">
+    <link rel="stylesheet" type="text/css" href="../menu.css">
+    <link rel="stylesheet" type="text/css" href="../projectPages.css">
+    <link rel="stylesheet" type="text/css" href="../../HEADER.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('#header').load('../../lowLevelHeader.html')
+        })
+    </script>
+
+    <script>
+        $(function () {
+            $('#foot').load('../../footer.html')
+        })
+    </script>
+</head>
+
+
+
+<body>
+
+<div class="panelContainer">
+
+    <div class="panelCover">
+        <img id="pic_0_1" style="width:100%" src="HandBrace/HandBrace_cover.jpg">
+        <div class="coverText" style="font-size: 1em;"></div>
+    </div>
+
+    <div class="coverTextDark">
+        <br>
+        For a new application of tailored hand braces, <b>MIGN</b> needed a method for quickly gathering key measurements in the field, and
+        assigning the appropriate brace to the patient. I built a solution based on applying pose detection models, clustering techniques and
+        point cloud manipulation to LiDAR scans collected from an iPhone.
+        <br>
+        <br>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="panel">
+        <img style="width:100%" id="pic_0_3" src="Emulait/Camera_Truedepth.jpg" alt="Emulait-img01">
+        <br>
+        <br>
+        <div class="panelTextDark">
+            We did not want to assume that nipple width was enough of differentiator between patients, so we needed an accessible,
+            reliable and high resolution method for capturing depth. Studying various technologies available
+            we settled on the front camera (TrueDepth Camera) available on all iPhones 11 and above.
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="panel">
+        <img style="width:100%" id="pic_0_5" src="Emulait/Emulait_Orientation.png" alt="Emulait-img03">
+        <br>
+        <div class="panelTextDark">
+            Based on a small initial sample of approximately 10 patients, we defined a user-friendly process to gather data,
+            and we built an algorithm using python (Open3D, Numpy, Scipy, Pandas, Matplotlib, etc.) that extracted
+            vital measurements, key 3D points, and rebuild the nipple for manufacturing. The first part of the algorithm oriented
+            each scan along a common axis through the optimization of a few key metrics.
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="panel">
+        <br>
+        <img style="width:100%" id="pic_0_5" src="Emulait/Emulait_Filtering.png" alt="Emulait-img03">
+        <div class="panelTextDark">
+            After orientation, the second part of the algorithm gradually filtered out vertices based on their estimated normals until
+            a clear separation was found between the base and tip of the edge of the nipple.
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="panel">
+        <img style="width:100%" id="pic_0_6" src="Emulait/Emulait_CorrelationMatrix.png" alt="Emulait-img04">
+        <br>
+        <br>
+        <div class="panelTextDark">
+            We organized a <i><b><a href="https://www.academia.edu/2994-435X/1/1/10.20935/AcadMed6111" style="color: white">large study</a></b></i>
+            of patients from diverse backgrounds to start the process of building a dataset for 2D detection and fine tune the algorithm. The result
+            was a dataset of scans, colors and 3D key points over 500 scans from patients across different backgrounds.
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="panel">
+        <img style="width:100%" id="pic_0_7" src="Emulait/Color-Shape-Diagram.jpg" alt="Emulait-img05">
+        <br>
+        <div class="panelTextDark">
+            We used PCA analysis, outlier detection and data segmentation of the large dataset to determine five meaningful typologies and colors.
+            Because, the final capturing process needed to be automated we also utilized the dataset to train object detection models to recognize the patient's
+            nipple in 3D scans and 2D images.
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <br>
+    <br>
+    <br>
+
+
+</div>
+
+<div id="foot"></div>
+
+<div id="header"></div>
+<!--<div class="titleContentHead">-->
+<!--<ti> U B I K </ti>-->
+
+<!--<a href="../ProductHome.html">-->
+<!--<div class="forLink" style="text-align:left; left:0vw; width:10%">-->
+<!--<linkTxt> <i>Back</i> </linkTxt>-->
+<!--</div>-->
+<!--</a>-->
+
+<!--<a href="https://www.fastcompany.com/90233283/ikea-wants-to-3d-scan-your-butt">-->
+<!--<div class="forLink">-->
+<!--<linkTxt> <i>Press</i> </linkTxt>-->
+<!--</div>-->
+<!--</a>-->
+<!--</div>-->
+
+<!--<div class="next">-->
+<!--<img onmouseover="reveal(this,1)" onmouseout="reveal(this,.5)" onclick="turn('pg0',5,'marker0')" src="../Icons/nextPage.png">-->
+<!--</div>-->
+
+<!--<div class="previous">-->
+<!--<img onmouseover="reveal(this,1)" onmouseout="reveal(this,.5)" onclick="turnBack('pg0',5,'marker0')" src="../Icons/previousPage.png">-->
+<!--</div>-->
+
+<!--<div class="pg">-->
+<!--<img style="opacity: 1" id="pg01" src="Ubik/ws_ubik.jpg">-->
+<!--<img id="pg02" src="Ubik/ws_ubik2.jpg">-->
+<!--<img id="pg03" src="Ubik/ws_ubik3.jpg">-->
+<!--<img id="pg04" src="Ubik/ws_ubik4.jpg">-->
+<!--<img id="pg05" src="Ubik/ws_ubik5.jpg">-->
+
+<!--<div style="left: 30%" class="marker">-->
+<!--<img style="opacity:.8;" id="marker01" src="../Icons/dropDownEntry.png">-->
+<!--<img style="opacity:.3;" id="marker02" src="../Icons/dropDownEntry.png">-->
+<!--<img style="opacity:.3;" id="marker03" src="../Icons/dropDownEntry.png">-->
+<!--<img style="opacity:.3;" id="marker04" src="../Icons/dropDownEntry.png">-->
+<!--<img style="opacity:.3;" id="marker05" src="../Icons/dropDownEntry.png">-->
+<!--</div>-->
+
+<!--</div>-->
+
+<!--<div class="heading">-->
+<!--<hTi>-->
+<!--<a href="../ArchitectureHome.html" style="color: black; opacity:.4" onmouseover="reveal(this,1)" onmouseleave="reveal(this,.4)">-->
+<!--Arch-->
+<!--</a>-->
+<!--&nbsp &nbsp &nbsp-->
+<!--<a href="../Technology.html" style="color: black; opacity:.4" onmouseover="reveal(this,1)" onmouseleave="reveal(this,.4)">-->
+<!--Tech-->
+<!--</a>-->
+<!--&nbsp &nbsp &nbsp-->
+<!--<a href="../ProductHome.html" style="color: black; opacity:.4" onmouseover="reveal(this,1)" onmouseleave="reveal(this,.4)">-->
+<!--Product-->
+<!--</a>-->
+<!--</hTi>-->
+<!--<cTi>-->
+<!--<a href="../../index.html" style="color: black; text-decoration: none;" onmouseover="reveal(this,.4)" onmouseleave="reveal(this,1)">-->
+<!--P E T E R &nbsp <span style="white-space: nowrap"> &nbsp  W I L D F E U E R </span>-->
+<!--</a>-->
+<!--</cTi>-->
+<!--<linkTi>-->
+<!--&nbsp &nbsp &nbsp-->
+<!--<a href="https://www.linkedin.com/in/peter-wildfeuer-80b12228/" style="color: black; opacity:.4" onmouseover="reveal(this,1)" onmouseleave="reveal(this,.4)">-->
+<!--LinkedIn-->
+<!--</a>-->
+<!--&nbsp &nbsp &nbsp-->
+<!--<a href="https://github.com/pwildfe1" style="color: black; opacity:.4" onmouseover="reveal(this,1)" onmouseleave="reveal(this,.4)">-->
+<!--GitHub-->
+<!--</a>-->
+<!--&nbsp &nbsp &nbsp-->
+<!--<a href="../AboutMe.html" style="color: black; opacity:.4" onmouseover="reveal(this,1)" onmouseleave="reveal(this,.4)"> About Me </a>-->
+<!--</linkTi>-->
+<!--</div>-->
+
+<!--<div class="contain"></div>-->
+
+
+</body>
+</html>

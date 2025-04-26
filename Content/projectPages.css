@@ -7,7 +7,6 @@ body{
 .chapterText {
     position: absolute;
     width: 30%;
-    padding: 1%;
     /*background-color: blue;*/
     font-size: calc(.75vw + 14px);
     transform: translate(0%, 250px);
