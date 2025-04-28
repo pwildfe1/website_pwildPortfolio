@@ -79,8 +79,8 @@
     <img style="width:100%;" id="pic_0_3" src="NYCHA/filtering_ecms.PNG" alt="HandScan-img02">
     <br>
     <div class="panelTextDark">
-      After an initial review of ECMs that were relevant to their portfolio, the total number of unique ECM combinations was in the billions, so we
-      worked with MEP engineers and NYCHA architects to narrow down the total number of ECMs that were more realistic.
+      Initially, the total number of unique ECM combinations was in the billions, so we worked with MEP engineers and NYCHA architects
+      to narrow down the latent space to include only the most feasible ECMs.
     </div>
   </div>
 
@@ -94,9 +94,10 @@
     <img style="width:80%;" id="pic_0_5" src="NYCHA/SiteEUI_Predictions.PNG" alt="HandScan-img02">
     <br>
     <div class="panelTextDark">
-      We trained random forest models on subsets of our simulation results to improve our simulation capacity. For instance, we paired every simulation that included
-      an electric boiler with the corresponding simulation that used a Central VRF system. Then, we used the electric boiler and VRF system results to predict
-      the simulation results for the same iteration using central gas boiler.
+      We trained random forest models on subsets of the simulation results to enhance our predictive capabilities.
+      For example, rather than simulating every central gas boiler combination directly,
+      we matched each simulation involving an electric boiler with its corresponding simulation using a VRF system.
+      Then we used these paired results to predict the outcomes for the equivalent ECM combinations that utilized a central gas boiler.
     </div>
   </div>
 
@@ -108,9 +109,9 @@
     <br>
     <img style="width:100%" id="pic_0_6" src="NYCHA/20230316_WebAppManual_detail.png" alt="NYCHA-img03">
     <div class="panelTextDark">
-      After running all the simulations, the challenge was to create a meaningful way to navigate a complex dataset of 60K entries with over 40 variables.
-      Rather than handing over a large Excel sheet, and leaving data navigation to the client, I decided to build a web app based on a parallel coordinate system
-      that enables users to arrive to as few as 1 specific ECM combination from 60,000 based on their budget, ecm restrictions, and performance targets.
+      The next challenge was to create a meaningful way to navigate a complex dataset of 60K entries with over 40 variables.
+      We decided to build a web app based on a parallel coordinate system that enables users to arrive to as few as 1 specific ECM combination
+      from 60,000 based on their budget, ecm restrictions, and performance targets.
     </div>
     <br>
   </div>
@@ -126,7 +127,7 @@
       Your browser does not support the video tag.
     </video>
     <div class="panelTextDark">
-      One of the weaknesses of a parallel coordinates graph is the lack of clarity and the difficulty in figuring out which variable to filter out next.
+      Parallel coordinate graphs are often confusing and users have a hard time figuring out which variable to filter out next.
       The sensitivity factor and our applications ability to hide and reveal the graph lines help address these challenges.
       In the video the user eliminates the ECMs they cannot use, sets their budget, sets their performance target, uses the sensitivity metric to determine
       which variable to filter out, and finally reveals the individual lines once they've narrowed down the dataset.
