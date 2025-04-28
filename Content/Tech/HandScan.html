@@ -41,8 +41,8 @@
 <div class="panelContainer">
 
     <div class="panelCover">
-        <img id="pic_0_1" style="width:100%" src="HandBrace/HandBrace_cover.jpg">
-        <div class="coverText" style="font-size: 1em;"></div>
+        <img id="pic_0_1" style="width:100%" src="HandScan/HandScan_cover.jpg">
+        <div class="coverText" style="font-size: .75em; color:black; top:40%">POSE MEASUREMENTS</div>
     </div>
 
     <div class="coverTextDark">
@@ -59,13 +59,12 @@
     <br>
 
     <div class="panel">
-        <img style="width:100%" id="pic_0_3" src="Emulait/Camera_Truedepth.jpg" alt="Emulait-img01">
+        <img style="width:70%" id="pic_0_3" src="HandScan/HandScan_pose_estimation.jpg" alt="HandScan-img01">
         <br>
         <br>
         <div class="panelTextDark">
-            We did not want to assume that nipple width was enough of differentiator between patients, so we needed an accessible,
-            reliable and high resolution method for capturing depth. Studying various technologies available
-            we settled on the front camera (TrueDepth Camera) available on all iPhones 11 and above.
+            After building a prototype iPhone application to gather point clouds, we created an algorithm for collecting measurements that involved
+            projecting the point cloud into 2-D space to overlay a pose estimation model, then mapping it back to 3D space.
         </div>
     </div>
 
@@ -74,13 +73,10 @@
     <br>
 
     <div class="panel">
-        <img style="width:100%" id="pic_0_5" src="Emulait/Emulait_Orientation.png" alt="Emulait-img03">
+        <img style="width:70%; margin-left:100px; margin-right:100px; margin-bottom:20px" id="pic_0_5" src="HandScan/section-diagram.png" alt="HandScan-img02">
         <br>
         <div class="panelTextDark">
-            Based on a small initial sample of approximately 10 patients, we defined a user-friendly process to gather data,
-            and we built an algorithm using python (Open3D, Numpy, Scipy, Pandas, Matplotlib, etc.) that extracted
-            vital measurements, key 3D points, and rebuild the nipple for manufacturing. The first part of the algorithm oriented
-            each scan along a common axis through the optimization of a few key metrics.
+            We used the placed markers as reference points to generate cut planes at key joints along each finger.
         </div>
     </div>
 
@@ -90,45 +86,13 @@
 
     <div class="panel">
         <br>
-        <img style="width:100%" id="pic_0_5" src="Emulait/Emulait_Filtering.png" alt="Emulait-img03">
+        <img style="width:80%" id="pic_0_5" src="HandScan/finger-extraction-diagram.png" alt="HandScan-img03">
         <div class="panelTextDark">
-            After orientation, the second part of the algorithm gradually filtered out vertices based on their estimated normals until
-            a clear separation was found between the base and tip of the edge of the nipple.
+            Once points at the cut plane were collected the table was removed using linear regression, point cloud outliers were removed,
+            the fingers were isolated using clustering, and moving "average" curve was fit to each finger to simplify its profile.
         </div>
-    </div>
-
-    <br>
-    <br>
-    <br>
-
-    <div class="panel">
-        <img style="width:100%" id="pic_0_6" src="Emulait/Emulait_CorrelationMatrix.png" alt="Emulait-img04">
         <br>
-        <br>
-        <div class="panelTextDark">
-            We organized a <i><b><a href="https://www.academia.edu/2994-435X/1/1/10.20935/AcadMed6111" style="color: white">large study</a></b></i>
-            of patients from diverse backgrounds to start the process of building a dataset for 2D detection and fine tune the algorithm. The result
-            was a dataset of scans, colors and 3D key points over 500 scans from patients across different backgrounds.
-        </div>
     </div>
-
-    <br>
-    <br>
-    <br>
-
-    <div class="panel">
-        <img style="width:100%" id="pic_0_7" src="Emulait/Color-Shape-Diagram.jpg" alt="Emulait-img05">
-        <br>
-        <div class="panelTextDark">
-            We used PCA analysis, outlier detection and data segmentation of the large dataset to determine five meaningful typologies and colors.
-            Because, the final capturing process needed to be automated we also utilized the dataset to train object detection models to recognize the patient's
-            nipple in 3D scans and 2D images.
-        </div>
-    </div>
-
-    <br>
-    <br>
-    <br>
 
     <br>
     <br>

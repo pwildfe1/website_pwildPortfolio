@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Peter Wildfeuer Design</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <style>
+    body {
+      background-color: #ffffff;
+      margin: 0;
+      overflow: hidden;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="../content.css">
+  <link rel="stylesheet" type="text/css" href="../menu.css">
+  <link rel="stylesheet" type="text/css" href="../projectPages.css">
+  <link rel="stylesheet" type="text/css" href="../../HEADER.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $('#header').load('../../lowLevelHeader.html')
+    })
+  </script>
+
+  <script>
+    $(function () {
+      $('#foot').load('../../footer.html')
+    })
+  </script>
+</head>
+
+
+
+<body>
+
+<div class="panelContainer">
+
+  <div class="panelCover">
+    <img id="pic_0_1" style="width:100%" src="NYCHA/ws_NYCHA_innerCover.png" alt="portfolio_analysis">
+    <div class="coverText" style="font-size: .75em; top:40%">NYCHA ANALYSIS</div>
+  </div>
+
+  <div class="coverTextDark">
+    <br>
+    NYCHA needed a playbook to guide renovation projects on their portfolio of over 300 assets. Building individual energy models for each property was not feasible,
+    so instead, we analyzed NYCHA's portfolio data to identify four meaningful typologies, parameterized them, built a simulation pipeline
+    that included random forest models to analyze over 60K different energy conservation measure combinations (ECMs), and created a new web application for navigating
+    the results.
+    <br>
+    <br>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="panel">
+    <img style="width:100%" id="pic_0_1" src="NYCHA/PortfolioSummary.png" alt="NYCHA-img01">
+    <br>
+    <img style="width:90%" id="pic_0_2" src="NYCHA/PortfolioTypologies.png" alt="NYCHA-img02">
+    <br>
+    <br>
+    <div class="panelTextDark">
+      In conjunction with Marvel Architects, we analyzed NYCHA's portfolio data to identify four meaningful typologies. Of those typologies we narrowed down the
+      scope to two that would effectively cover most retrofit scenarios.
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="panel">
+    <img style="width:100%;" id="pic_0_3" src="NYCHA/filtering_ecms.PNG" alt="HandScan-img02">
+    <br>
+    <div class="panelTextDark">
+      After an initial review of ECMs that were relevant to their portfolio, the total number of unique ECM combinations was in the billions, so we
+      worked with MEP engineers and NYCHA architects to narrow down the total number of ECMs that were more realistic.
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="panel">
+    <img style="width:80%;" id="pic_0_4" src="NYCHA/HVAC_Imputing.png" alt="HandScan-img02">
+    <br>
+    <img style="width:80%;" id="pic_0_5" src="NYCHA/SiteEUI_Predictions.PNG" alt="HandScan-img02">
+    <br>
+    <div class="panelTextDark">
+      We trained random forest models on subsets of our simulation results to improve our simulation capacity. For instance, we paired every simulation that included
+      an electric boiler with the corresponding simulation that used a Central VRF system. Then, we used the electric boiler and VRF system results to predict
+      the simulation results for the same iteration using central gas boiler.
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="panel">
+    <br>
+    <img style="width:100%" id="pic_0_6" src="NYCHA/20230316_WebAppManual_detail.png" alt="NYCHA-img03">
+    <div class="panelTextDark">
+      After running all the simulations, the challenge was to create a meaningful way to navigate a complex dataset of 60K entries with over 40 variables.
+      Rather than handing over a large Excel sheet, and leaving data navigation to the client, I decided to build a web app based on a parallel coordinate system
+      that enables users to arrive to as few as 1 specific ECM combination from 60,000 based on their budget, ecm restrictions, and performance targets.
+    </div>
+    <br>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="panel">
+    <br>
+    <video controls width="100%">
+      <source src="NYCHA/NYCHA_Tool.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="panelTextDark">
+      One of the weaknesses of a parallel coordinates graph is the lack of clarity and the difficulty in figuring out which variable to filter out next.
+      The sensitivity factor and our applications ability to hide and reveal the graph lines help address these challenges.
+      In the video the user eliminates the ECMs they cannot use, sets their budget, sets their performance target, uses the sensitivity metric to determine
+      which variable to filter out, and finally reveals the individual lines once they've narrowed down the dataset.
+    </div>
+    <br>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+</div>
+
+<div id="foot"></div>
+
+<div id="header"></div>
+
+
+</body>
+</html>
