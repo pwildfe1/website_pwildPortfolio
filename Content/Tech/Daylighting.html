@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Peter Wildfeuer Design</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <style>
+    body {
+      background-color: #ffffff;
+      margin: 0;
+      overflow: hidden;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="../content.css">
+  <link rel="stylesheet" type="text/css" href="../menu.css">
+  <link rel="stylesheet" type="text/css" href="../projectPages.css">
+  <link rel="stylesheet" type="text/css" href="../../HEADER.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $('#header').load('../../lowLevelHeader.html')
+    })
+  </script>
+
+  <script>
+    $(function () {
+      $('#foot').load('../../footer.html')
+    })
+  </script>
+</head>
+
+
+
+<body>
+
+<div class="panelContainer">
+
+  <div class="panelCover">
+    <img id="pic_0_1" style="width:100%" src="Daylighting/Daylighting_Cover.gif" alt="daylighting_analysis">
+    <div class="coverText" style="font-size: .75em; top:40%">Daylighting Studies</div>
+  </div>
+
+  <div class="coverTextDark">
+    <br>
+    Our clients often need a quick understanding of how they can maximize daylighting performance early in the design process. So, while at WSP, I developed a workflow
+    that generated thousands of possible window orientations on a simple box model, simulated each iteration, and accumulated the results for clustering analysis
+    and dashboard visualization.
+    <br>
+    <br>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="panel">
+    <img style="width:100%" id="pic_0_1" src="Daylighting/Procedure.PNG" alt="Daylighting-img01">
+    <br>
+    <br>
+    <div class="panelTextDark">
+      The process for this schematic level design tool is to identify key room typologies within the design, enter room dimensions and materials, simulate, and
+      visualize the results. The goal is to provide the client with a wide variety of possible window orientations across the design space to prevent limiting their options as
+      the project progresses into the design process.
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="panel">
+    <img style="width:60%" id="pic_0_2" src="Daylighting/Parameterized%20West%20Office.PNG" alt="Daylighting-img02">
+    <br>
+    <br>
+    <div class="panelTextDark">
+      A custom C# plugin in Grasshopper modifies the window of a box model to account for a wide variety of parameters. The simulations were run using
+      Climate Studio in Grasshopper, and the results are converted into .json files for collation, analysis and visualization.
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="panel">
+    <img style="width:80%;" id="pic_0_4" src="Daylighting/Daylighting_Dashboard.PNG" alt="Daylighting-img04">
+    <br>
+    <br>
+    <div class="panelTextDark">
+      The dashboard would allow users to visualize and navigate the results intelligently to test out individual window orientations.
+    </div>
+    <br>
+
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="panel">
+    <img style="width:100%" id="pic_0_3" src="Daylighting/Clusters_Spread.png" alt="Daylighting-img03">
+    <br>
+    <br>
+    <br>
+    <img style="width:100%;" id="pic_0_5" src="Daylighting/West_Selected_Iteration.png" alt="Daylighting-img05">
+    <br>
+    <br>
+    <br>
+    <div class="panelTextDark">
+      We used data segmentation to identify patterns and extract out those window orientations that balanced different forms of performance.
+      The different parallel coordinate graphs above isolate different clusters of the same dataset. Through this process we identified an effective subset of iterations
+      at the earliest phase of the project and discovered that window width was more important than height in maximizing illumination while minimizing window area.
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <br>
+  <br>
+  <br>
+
+</div>
+
+<div id="foot"></div>
+
+<div id="header"></div>
+
+
+</body>
+</html>
