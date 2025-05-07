@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Peter Wildfeuer Design</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <style>
+    body {
+      background-color: #ffffff;
+      margin: 0;
+      overflow: hidden;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="../content.css">
+  <link rel="stylesheet" type="text/css" href="../menu.css">
+  <link rel="stylesheet" type="text/css" href="../projectPages.css">
+  <link rel="stylesheet" type="text/css" href="../../HEADER.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $('#header').load('../../lowLevelHeader.html')
+    })
+  </script>
+
+  <script>
+    $(function () {
+      $('#foot').load('../../footer.html')
+    })
+  </script>
+</head>
+
+
+
+<body>
+
+<div class="panelContainer">
+
+  <div class="panelCover">
+    <img id="pic_0_1" style="width:100%" src="Adidas/high-curl-score.png" alt="portfolio_analysis">
+    <div class="coverText" style="font-size: .75em; top:40%; color:black;">Adidas</div>
+  </div>
+
+  <div class="coverTextDark">
+    <br>
+    Adidas wanted to explore 3D lattice structures that would naturally shear forward as the user walked. So we developed an approach combining stochastic gradient
+    descent with an open source FEA program (Calculix) to automatically determine the optimal lattice solution based on a custom loss function.
+    <br>
+    <br>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="panel">
+    <img style="width:100%" id="pic_0_1" src="Adidas/cell_types.png" alt="adidas-img01a">
+    <br>
+    <img style="width:90%" id="pic_0_2" src="Adidas/pucks.png" alt="adidas-img01b">
+    <br>
+    <br>
+    <div class="panelTextDark">
+      A script was built to create 2'' diameter pucks of different lattice types and run them through a simulation pipeline that would converge to the optimal
+      solution.
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="panel">
+    <img style="width:80%;" id="pic_0_3" src="Adidas/shift-evaluation.png" alt="adidas-img02">
+    <br>
+    <img style="width:80%;" id="pic_0_3" src="Adidas/curl-evaluation.png" alt="adidas-img03">
+    <br>
+    <div class="panelTextDark">
+      We created two custom loss functions that would score how affective the lattice would be at shearing forward, based on a simple static compression simulation.
+      The first function measured how much the top of the lattice volume would tilt forward, and the second loss function measured how much the top face shifted sideways.
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="panel">
+    <br>
+    <img id="pic_0_1" style="width:100%" src="Adidas/high-curl-score.png" alt="adidas-img04">
+    <br>
+    <img style="width:100%;" id="pic_0_4" src="Adidas/converging.png" alt="adidas-img05">
+    <br>
+    <div class="panelTextDark">
+      A simulation pipeline that removed lattice options with extensive stresses was created, and a stochastic gradient descent algorithm tracked
+      the highest performing lattices until a minima was found.
+    </div>
+    <br>
+  </div
+
+  <br>
+  <br>
+  <br>
+
+  <div class="panel">
+    <img style="width:80%;" id="pic_0_4" src="Adidas/chiral-parameters.png" alt="adidas-img06">
+    <br>
+    <div class="panelTextDark">
+      Two iterations were chosen based on the two different loss functions. Based on the results, the chiral lattices proved to be more effective, with a slight
+      variation in bend angle across the puck providing the best opportunity for shearing forward.
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="panel">
+    <br>
+    <img style="width:100%" id="pic_0_6" src="Adidas/20.05.06_Tilt_whenCentered.jpg" alt="adidas-img07">
+    <div class="panelTextDark">
+      The results were printed and we did an adhoc test at the beginning of COVID in my small apartment. Under simple compressions the results showed that
+      the optimal lattice solution did in fact produce the desired shearing behaviour.
+    </div>
+    <br>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+</div>
+
+<div id="foot"></div>
+
+<div id="header"></div>
+
+
+</body>
+</html>

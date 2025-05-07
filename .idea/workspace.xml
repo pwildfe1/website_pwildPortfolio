@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb48fff2-87fc-47eb-a8b8-3edecc6578c8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/Links/ws_Shear_Cover.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tech/Adidas.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Tech/Daylighting/Slide28.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Technology_v2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Technology_v2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,24 +213,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/GitHub/website_pwildPortfolio/Content/Tech&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/GitHub/website_pwildPortfolio/Content/Links",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\website_pwildPortfolio\Content\Links" />
       <recent name="D:\GitHub\website_pwildPortfolio\Content\Tech" />
       <recent name="C:\Users\wildf\Documents\GitHub\website_pwildPortfolio\Content" />
       <recent name="C:\Users\wildf\Documents\GitHub\website_pwildPortfolio\Content\Product" />
@@ -302,6 +305,7 @@
       <workItem from="1745802277580" duration="1807000" />
       <workItem from="1746223705509" duration="1874000" />
       <workItem from="1746382875376" duration="9986000" />
+      <workItem from="1746590147491" duration="3037000" />
     </task>
     <servers />
   </component>
